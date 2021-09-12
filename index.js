@@ -114,10 +114,12 @@ const player = { //object of the 1875 mp3 player clone
   }
 
   function getSongIdIndex(id){  //find the song index from the list (and returns it if exist!- wehn running i assigned before running it)
+
       for(let i=0; i<player["songs"].length; i++)
       {
        if(player["songs"][i]["id"] === id) return i;
       }
+      
   } // if i use throw in this function when i use it in other places it stops the running of both used and using functions cuz throw just stop the wholeee operation of the code cuz it realises an error... so better assign it with an if statement before each run of this function in other functions
 
   function getPlaylistIdIndex(id){  //find the playlist index from the list (and returns it if exist!- wehn running i assigned before running it)
